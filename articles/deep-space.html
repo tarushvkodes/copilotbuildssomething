@@ -3,15 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deep Space Exploration - SpaceXplore</title>
+    <title>Deep Space - SpaceXplore</title>
     <link rel="stylesheet" href="../style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Venture into the mysteries of deep space and discover uncharted cosmic territories with SpaceXplore.">
+    <meta name="keywords" content="deep space, exploration, cosmos, SpaceXplore">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="Deep Space Exploration - SpaceXplore">
+    <meta property="og:description" content="Explore the frontiers of deep space and beyond with SpaceXplore.">
+    <meta property="og:type" content="website">
+    <!-- End SEO Meta Tags -->
     <style>
-        .article-content { max-width: 800px; margin: 80px auto 40px; padding: 20px; }
+        .article-content { max-width: 800px; margin: 100px auto 40px; padding: 20px; }
         .article-content img { width: 100%; height: auto; border-radius: 10px; margin: 20px 0; }
         .article-content h1 { font-size: 2.5em; margin-bottom: 20px; }
         .article-content p { margin-bottom: 1.5em; line-height: 1.8; }
+
+        /* Added nav styling to fix it at the top */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 0 20px;
+            height: 60px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav .nav-links a {
+            margin: 0 10px;
+        }
+        /* Adjust article content margin to avoid being hidden behind fixed nav */
+        .article-content { margin-top: 100px; }
     </style>
 </head>
 <body>
@@ -77,6 +106,14 @@
                 <li>The physics of extreme environments</li>
             </ul>
         </div>
+
+        <!-- Extended content for SEO and long article page -->
+        <section id="extended-content">
+            <h2>In-Depth Analysis</h2>
+            <p>This article explores the vastness of deep space, detailing the structure of the cosmos, the phenomena encountered in interstellar space, and the groundbreaking discoveries in astrophysics.</p>
+            <p>Discussions include the formation and evolution of galaxies, the mysteries of nebulae, and the impact of dark matter on the universe.</p>
+        </section>
+        <!-- End extended content -->
     </article>
 
     <footer>

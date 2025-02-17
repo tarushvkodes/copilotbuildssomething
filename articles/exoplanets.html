@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover new exoplanets and the search for habitable worlds beyond our solar system with SpaceXplore.">
+    <meta name="keywords" content="exoplanets, habitable worlds, space, exploration, SpaceXplore">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="Exoplanets - SpaceXplore">
+    <meta property="og:description" content="Explore discoveries of new exoplanets and potential habitable zones with SpaceXplore.">
+    <meta property="og:type" content="website">
     <title>Discovering New Exoplanets - SpaceXplore</title>
     <link rel="stylesheet" href="../style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -10,12 +17,33 @@
     <style>
         .article-content {
             max-width: 800px;
-            margin: 80px auto 40px;
+            margin: 100px auto 40px;
             padding: 20px;
         }
         .article-content img { width: 100%; height: auto; border-radius: 10px; margin: 20px 0; }
         .article-content h1 { font-size: 2.5em; margin-bottom: 20px; }
         .article-content p { margin-bottom: 1.5em; line-height: 1.8; }
+
+        /* Added nav styling to fix it at the top */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 0 20px;
+            height: 60px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav .nav-links a {
+            margin: 0 10px;
+        }
+        /* Adjust article content margin to avoid being hidden behind fixed nav */
+        .article-content { margin-top: 100px; }
     </style>
 </head>
 <body>
